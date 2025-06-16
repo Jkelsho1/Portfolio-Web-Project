@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="-background">
+        <img src="bg.jpg" alt="background">
+        
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <div class="error-message" id="fullNameError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error-message" id="emailError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <div class="error-message" id="passwordError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="number" id="phoneNumber" name="phoneNumber" required>
+        <div class="error-message" id="phoneNumberError"></div>
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female" required> Female</label>
+          <label><input type="radio" name="gender" value="Other" required> Other</label>
+        </div>
+        <div class="error-message" id="genderError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        <div class="error-message" id="dateOfBirthError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course/Program:</label>
+        <select id="course" name="course" required>
+          <option value="">Select Course</option>
+          <option value="BSIT">BSIT - Bachelor of Science in Information Technology</option>
+          <option value="BSIT">BSIS - Bachelor of Science in Information Systems</option>
+          <option value="BSCS">BSCS - Bachelor of Science in Computer Science</option>
+          <option value="BSCE">BSCE - Bachelor of Science in Computer Engineering</option>
+        </select>
+        <div class="error-message" id="courseError"></div>
+      </div>
+
+      <div class="form-group">
+        <label class="terms">
+          <input type="checkbox" id="terms" name="terms" required>
+          I accept the Terms and Conditions
+        </label>
+        <div class="error-message" id="termsError"></div>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="new.js"></script>
+</body>
+</html>

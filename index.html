@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John Michael | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+    <link rel="icon" type="image/png" href="pictures/logo.png" />
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <a href="#home">
+                <img src="pictures/logo.png" alt="jmg"></a>
+                    <span>John Michael | Portfolio</span>
+                </div>
+
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <a href="#home">Home</a>
+                </div>
+
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <a href="#skills">Skills</a>
+                </div>
+
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="#projects">Projects</a>
+                </div>
+
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <a href="#about">About Me</a>
+                </div>
+
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <a href="#footer-main">Contact Me</a>
+                    <button onclick="scrollToFooter()"></button>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About Me</a>
+                <a href="#footer-main">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="pictures/ID PIC.jpg" alt="John Michael" />
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+                    Hey it's <span>John Michael Guy-joco</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                    I'm <span></span>
+                </div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    Hello! I’m JM, a passionate and driven 2nd-year Bachelor of Science in Information Technology (BSIT)
+                    student at National University – Mall Of Asia (NU MOA) and a scholar from Taguig City. As an aspiring web and application developer,
+                    I am dedicated to honing my skills in creating innovative, user-friendly, and efficient digital solutions.
+                    Through my academic journey and developed projects, I continuously strive to blend creativity with technical
+                    expertise to build impactful applications that meet real-world needs. Welcome to my portfolio, where you can
+                    explore my personal information, works, skills, and growth as a future IT professional.
+                </p>
+
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://www.facebook.com/dcsedkel" title="Facebook" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/j.mmkel_/" title="Instagram" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/dcsedkel?s=21" title="X" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-x-twitter"></i></a>
+                    <!--<a href="jmguyjoco@gmail.com" title="Email" rel="noopener noreferrer">
+                        <i class="fa-solid fa-envelope"></i></a>-->
+                </div>
+                    
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                <button id="downloadBtn">Download CV</button></div>
+
+                <script>
+                    document.getElementById('downloadBtn').addEventListener('click', function() {
+                    const link = document.createElement('a');
+                    link.href = 'John-Michael-Decen-Guy-joco-CV.pdf'; // file path ng cv
+                    link.download = 'John-Michael-Decen-Guy-joco-CV.pdf'; // downloaded file name
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);});
+                </script>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>My <span>Skills</span></h2>
+        <p>This page contains the skills that I currently have in my degree pursuing career.</p>
+        <div class="skills-grid">
+            
+            <div class="skill-card">
+                <img src="https://cdn.dribbble.com/userupload/16505523/file/original-ead560979b865f6fa8273e27291b810d.jpg?resize=400x0" alt="wdevelop">
+                <span>Web</span>
+                <span>Development</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 82%"></div></div>
+                <span>★★★☆☆</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://i.pinimg.com/736x/5b/40/77/5b4077728b93362d3e345168e29d6cea.jpg" alt="mdevelop">
+                <span>Mobile</span>
+                <span>Application</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 78%"></div></div>
+                <span>★★★☆☆</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://t4.ftcdn.net/jpg/01/11/86/95/360_F_111869553_04OBDskYYU5r0b9PW3cfKfD3fkxlfAzW.jpg" alt="wdesign">
+                <span>Website</span>
+                <span>Design</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 64%"></div></div>
+                <span>★★★☆☆</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/010/948/490/non_2x/movie-film-editor-logo-design-video-editing-logo-concept-free-vector.jpg" alt="vediting">
+                <span>Video</span>
+                <span>Editing</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 86%"></div></div>
+                <span>★★★★☆</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://www.citypng.com/public/uploads/preview/hd-java-programming-logo-png-701751694771848sm650yaqjt.png" alt="java">
+                <span>Java</span>
+                <span>Langauge</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+                <span>★★★☆☆</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCIYxiUVuYbEivFiwgsuRbBwwaNI34CgtzfA&s" alt="js">
+                <span>Java</span>
+                <span>Script</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 74%"></div></div>
+                <span>★★★☆☆</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/019/865/111/small_2x/html-file-type-3d-rendering-on-transparent-background-ui-ux-icon-design-web-and-app-trend-png.png" alt="html">
+                <span>HyperText Markup</span>
+                <span>Langauge</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 84%"></div></div>
+                <span>★★★☆☆</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://w7.pngwing.com/pngs/73/762/png-transparent-html-css-design-and-build-web-sites-web-development-cascading-style-sheets-world-wide-web-web-design-text-logo.png" alt="css">
+                <span>Cascading Style</span>
+                <span>Sheet</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 82%"></div></div>
+                <span>★★★☆☆</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>My <span>Projects</span></h2>
+        <p>This page contains the best website projects that I have developed so far in my career.</p>
+
+        <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+                <img src="pictures/TLOU.png" alt="Game Website">
+                <h3>TLOU Game Website</h3>
+                <p>A website that only shows home page but is responsive to registration transaction.</p>
+                <a href="FA1_GUY-JOCO/GUY-JOCO_FA1/index.html" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <img src="pictures/playlist.png" alt="Playlist Website">
+                <h3>Song Playlist Web</h3>
+                <p>A web that collects my Top 10 most played song playlist.</p>
+                <a href="MA3_GUY-JOCO/Homepage.html" class="project-link">View Project</a>
+            </div>
+            
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <img src="pictures/registration.png" alt="School Registration Website">
+                <h3>School Registration Web</h3>
+                <p>A website that requires registration transaction.</p>
+                <a href="FA2_GUY-JOCO/FA2_GUY-JOCO/index.html" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <img src="pictures/portfolio.png" alt="Portfolio Website">
+                <h3>This Portfolio</h3>
+                <p>A website that showcases my IT projects, skills, and academic background while providing an easy way for visitors to learn about me and download my CV.</p>
+                <a href="index.html" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+    <h2>About <span>Me</span></h2>
+    <div class="about-containers">
+        <div class="about-container">
+            <h1><strong>Background</strong></h1>
+            <ul>
+                <li>Full Name: John Michael Decen Guy-joco</li>
+                <li>Date of Birth: September 6, 2004</li>
+                <li>Age: 20</li>
+                <li>Gender: Male</li>
+                <li>Citizenship: Filipino</li>
+                <li>Religion: Roman Catholic</li>
+                <li>Height: 178cm</li>
+                <li>Weight: 92kg</li>
+            </ul>
+        </div>
+
+        <div class="about-container">
+            <h1>Education</h1>
+            <h3>[College]</h3>
+            <h4><strong>National University - MOA</strong></h4>
+            <h4>(2021 – 2023)</h4> 
+            <p>Bachelor of  Science in Information Technology with Specialization in Mobile and Web Application (BSIT-MWA)</p>
+
+            <h3>[Senior High School]</h3>
+            <h4><strong>Senator Renato “Compañero” Cayetano Memorial Science and Technology High School</strong></h4>
+            <h4>(2023 - Present)</h4> 
+            <p>Information and Communication Technology with Specialization in Computer Systems Servicing (TVL-ICT)</p>
+
+            <h3>[Scholarships]</h3>
+            <h4>L.A.N.I Scholarship - Basic Type</h4>
+            <h4>(2023 - Present)</h4>
+        </div>
+
+        <div class="about-container">
+            <h1>Hobbies</h1>
+            <ul>
+                <li>Playing PC/Mobile Games</li>
+                <li>Watching Streams></li>
+                <li>Watching Coding Tutorials</li>
+                <li>Watching Movies/Series</li>
+                <li>Reading Mangas/Manhwas </li>
+                <li>Mobile Application Developing</li>
+                <li>Website Developing</li>
+            </ul>
+        </div>
+        
+        <div class="about-container">
+            <h1>Achievements & Experiences</h1>
+            <h3>[DOST-STII OJT]</h3>
+            <ul><li>Cashier (Encoder & Decoder of Budgets, and Cheque slips)</li></ul>
+
+            <h4>[Computer Systems Servicing CSS NC II] </h4>
+            <ul><li>Taker</li></ul>
+
+            <h3>[Esports Varsity (MLBB)]</h3>
+            <ul><li>Player at National University Mall Of Asia 2023 - Present</li></ul>
+
+            <h3>[GUI System Developed]</h3>
+            <ul><li>Banking System</li>
+            <li>Library System</li>
+                <li>Restaurant Management System</li>
+                    <li>Airline Reservation System</li></ul>
+
+            <h3>[Mobile Application Developed]</h3>
+            <ul><li>Pedometer App</li>
+                <li>BMI Calculator, Steps Counter/Tracker, & GPS Location Tracker</li></ul>
+
+            <h3>[Website Developed]</h3>
+            <ul><li>Portfolio</li>
+                    <li>Game Website</li>
+                        <li>Web Song Playlist</li>
+                            <li>School Registration Web</li></ul>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Me Section --> <!-- Footer -->
+    <footer>
+        <div class="footer-main" id="footer-main"> 
+            <div class="footer-about">
+                <span class="logo-name">John Michael Guy-joco</span>
+                <p>If you’d like to know more about me, feel free to reach out!</p>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>   
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#footer-main">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa fa-phone"></i> (+63) 969-0495-784</li>
+                    <li><i class="fa fa-envelope"></i> jmguyjoco@gmail.com</li>
+                    <li><i class="fa fa-map-marker-alt"></i> Taguig City</li>
+                    <li><i class="fa fa-clock"></i> Mon – Fri / 10am–10pm</li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Get the latest information</h4>
+                <form>
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Copyright © 2025 by John Michael Guy-joco. All Rights Reserved.</span>
+            <span>
+                <a href="#">Terms & Service</a> | <a href="#">Privacy Policy</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
